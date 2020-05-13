@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar style="text-align: center;">
+    <ion-title>cart</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-list-header>
+      Products Selected
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of cart">
+      <ion-avatar slot="start">
+        <img src="../../assets/img/item.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ item.product }}</h2>
+        <p>GH$ {{ item.amount }}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

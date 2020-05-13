@@ -1,5 +1,7 @@
 {
   "name": "data_storage",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
